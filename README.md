@@ -1,9 +1,16 @@
-# DSA-Practice
-Description
-Welcome to my DSA (Data Structures and Algorithms) Practice repository!
-In this repository, I will be uploading all of my DSA codes, solutions to LeetCode problems, and problems from other competitive programming platforms.
+# 🧑‍💻 **DSA-Practice Repository**
 
-Goals:
-* Improve my problem-solving skills by practicing DSA.
-* Maintain a collection of solved problems from platforms like LeetCode, Codeforces, Hackerrank, etc.
-* Track progress through consistent practice
+### 📚 **Description**
+Welcome to my **DSA (Data Structures and Algorithms) Practice** repository! 🚀  
+In this repository, you'll find all of my **DSA codes**, solutions to **LeetCode problems**, and challenges from various **competitive programming platforms**. 💻
+
+---
+
+### 🎯 **Goals**
+- **🔍 Improve Problem-Solving Skills:** By consistently practicing **Data Structures and Algorithms (DSA)**.
+- **📂 Maintain a Collection:** A growing library of **solved problems** from platforms like **LeetCode**, **Codeforces**, **Hackerrank**, and more.
+- **📈 Track Progress:** Through **regular** and **consistent practice**, ensuring steady improvement in my coding and problem-solving abilities.
+
+---
+
+Feel free to explore and contribute to this journey of mastering **DSA**! 🚀
