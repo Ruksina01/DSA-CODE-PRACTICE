@@ -5,7 +5,6 @@
 #include <algorithm>
 using namespace std;
 
-
 // Optimized Code
 int OptimizedMajorityElement(vector<int> &arr) // tc --> o(nlogn)
 {
@@ -45,7 +44,7 @@ int MooreMajorityElement(vector<int> &arr) // tc --> o(n)
         {
             ans = arr[i];
         }
-        if (ans == arr[i])
+        if (ans == arr[i]) // if
         {
             freq++;
         }
