@@ -52,7 +52,7 @@ int aggressiveCows(vector<int> &stalls, int k)
 int main()
 {
     vector<int> array = {4, 2, 1, 3, 6};
-    int n = 5;
+    int n = array.size();
     int k = 2;
     cout << aggressiveCows(array, k);
 

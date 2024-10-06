@@ -48,7 +48,7 @@ int bookAllocated(vector<int>& arr, int n, int m){
 
 int main(){
     vector<int> array = {12, 34, 67, 90};
-    int n = 4; 
+    int n = array.size();
     int m = 2;
     cout << bookAllocated(array,n,m);
     

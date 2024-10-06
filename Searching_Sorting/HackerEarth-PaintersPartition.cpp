@@ -1,47 +1,49 @@
-//  Allocate Minimum Number of Pages from N books to M students | GeeksForGeeks
+//  Painter's Partition Problem | Hacker Earth
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 
-//  Book Allocation or Allocate Problem
+//  Painter's Partition Problem
 
 // T.C -> O(n)
-bool isValid(vector<int> &arr, int n, int m, int maxAllowedPages)
+bool isValid(vector<int> &boards, int n, int m, int maxAllowedblocks)
 {
-    int student = 1, pages = 0;
+    int painter = 1, time = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > maxAllowedPages)
-            return false;
-        if (pages + arr[i] <= maxAllowedPages)
+        if(boards[i]>maxAllowedblocks) return false;
+        if (time + boards[i] <= maxAllowedblocks)
         {
-            pages += arr[i];
+            time += boards[i];
         }
         else
         {
-            student++;
-            pages = arr[i];
+            painter++;
+            time = boards[i];
         }
     }
-    return student > m ? false : true;
+    return painter > m ? false : true;
 }
 // T.C -> O(longN * n)
-int bookAllocated(vector<int> &arr, int n, int m)
+int paintersTime(vector<int> &boards, int n, int m)
 {
     if (m > n)
         return -1;
     int ans = -1;
     int sum = 0;
+    int maxValue = INT_MIN;
     for (int i = 0; i < n; i++) // O(n)
     {
-        sum += arr[i];
+        sum += boards[i];
+        maxValue = max(maxValue,boards[i]);
     }
-    int start = 0;
+    int start = maxValue;
     int end = sum;
     while (start <= end)
     { // O(longN)
         int mid = start + (end - start) / 2;
-        if (isValid(arr, n, m, mid))
+        if (isValid(boards, n, m, mid))
         {
             ans = mid;
             end = mid - 1;
@@ -56,10 +58,10 @@ int bookAllocated(vector<int> &arr, int n, int m)
 
 int main()
 {
-    vector<int> array = {12, 34, 67, 90};
-    int n = 4;
+    vector<int> arr = {40,30,10,20};
+    int n = arr.size();
     int m = 2;
-    cout << bookAllocated(array, n, m);
+    cout << paintersTime(arr, n, m);
 
     return 0;
 }
