@@ -1,7 +1,9 @@
+//   Merge Sorted Array | Leetcode 88
 #include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
+//   Merge Sorted Array
 void merge(vector<int> &nums1, int m, vector<int> &nums2, int n)
 {
     int index = m + n - 1;
